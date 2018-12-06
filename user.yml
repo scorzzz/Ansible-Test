@@ -1,0 +1,9 @@
+---
+- hosts: webservers
+  tasks:
+    - name: Creating user
+      user:
+        name: rajiv
+        state: present
+    - name: Creating another user
+      user: name=scorzzz state=present shell=/bin/sh
