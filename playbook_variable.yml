@@ -1,0 +1,7 @@
+---
+- hosts: all
+  vars: 
+    user1: test_user
+  tasks:
+    - name: Create a new user using variable
+      user: name={{user1}} state=present shell=/bin/sh 
