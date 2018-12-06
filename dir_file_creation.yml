@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: Create a directory
+      file: path=/var/tmp/rajiv_dir mode=0744 state=directory
+    - name: Create a file within the above directory
+      file: path=/var/tmp/rajiv_dir mode=0744 state=touch 
